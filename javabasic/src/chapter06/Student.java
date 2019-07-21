@@ -1,12 +1,12 @@
 package chapter06;
 
 public class Student {
-	public static int serialNum =1000;
-	public int studentID;
-	public String address;
-	public String studentName;
-	public int grade;
-	public int money;
+	private static int serialNum =1000;
+	private int studentID;
+	private String address;
+	private String studentName;
+	private int grade;
+	private int money;
 	
 	
 	//이름과 가진돈을 매개변수로 받는 생성자
@@ -27,9 +27,11 @@ public class Student {
 		
 	}
 	
-	public void takeOnsubway(Subway subway) {
+	public int takeOnsubway(Subway subway) {
 		subway.takeOn(1500);
 		this.money -=1500;
+		
+		return money;
 	}
 	
 	public void takeOffsubway(Subway subway) {
@@ -44,6 +46,8 @@ public class Student {
 	public static void showSerial() {
 		System.out.println(serialNum);
 	}
-	
+	public void takeOnsubway() {
+		System.out.println(money);
+	}
 	
 }
