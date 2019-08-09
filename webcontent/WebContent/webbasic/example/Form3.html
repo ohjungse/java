@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title> 방명록 및 다양한 기능 </title>
+</head>
+<body>
+</ul>
+</fieldset>
+<textarea cols=100 rows=10>방명록.</textarea><br>
+<input type ="search"> <input type = "submit" value = "검색">
+<br>
+<label> 주문갯수 1: <input type ="number" min =1 max =5 value =1></label>
+<br>
+<label> 주문갯수 2: <input type ="range" min=1max=5></label>
+<fieldset>
+<legend>신청 과목</legend>
+<label>신청할 과목 선택(1과목) </label><br>
+<input type ="radio" name="subject"
+value = "speaking">회화
+<input type ="radio" name="subject"
+value = "grammar">문법
+<input type ="radio" name="subject"
+value = "writing">작문
+</fieldset>
+<fieldset>
+<legend>메일링</legend>
+<label>메일수신할 뉴스주제(중복가능) </label><br>
+<input type ="checkbox" name="subject"
+value = "speaking">해외단신
+<input type ="checkbox" name="subject"
+value = "grammar">5분회화
+<input type ="checkbox" name="subject"
+value = "writing">모닝팝스
+</fieldset>
+<input type="color"><br>
+조회기간 : <input type ="date" id ="start"> ~ <input type ="date" id = "end"><br><br>
+조회시간 : <input type ="time" id ="start1"> ~ <input type ="time" id = "end1"><br><br>
+
+
+<select id ="class" multiple>
+<optgroup label ="공과대학">
+    <option value ="archi">건축공학과</option>
+    <option value ="comp">컴퓨터공학과</option>
+    <option value ="meca" selected>기계공학과</option>
+</optgoup>
+<optgroup label ="인문대학">
+    <option value ="archi">건축공학과</option>
+    <option value ="comp">컴퓨터공학과</option>
+    <option value ="meca" selected>기계공학과</option>
+</optgoup>
+</select>
+<select id ="class1">
+<optgroup label ="공과대학">
+    <option value ="archi">건축공학과</option>
+    <option value ="comp">컴퓨터공학과</option>
+    <option value ="meca" selected>기계공학과</option>
+</optgoup>
+<optgroup label ="인문대학">
+    <option value ="archi">건축공학과</option>
+    <option value ="comp">컴퓨터공학과</option>
+    <option value ="meca" selected>기계공학과</option>
+</optgoup>
+</select><br>
+<progress value ="30" max="100"></progress>
+<meter value =0.8></meter><br>
+</form>
+
+</body>
+
+
+</html>

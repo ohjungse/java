@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>글꼴</title>        
+        <script src ="prefixfree.min.js"></script>
+        <style>
+            *{
+                margin : 0px;
+                padding : 0px;
+            }
+            body{
+                background: rgba(255, 255, 255, 0.5);
+                /* background-image: url(../img/bg2.jpg); */
+                background-repeat: no-repeat;
+                background-size: 300px 500px;
+                background-position: left top;
+                background-attachment: fixed;
+            }
+         .color1{
+             color : gray;
+         }
+         #menubox
+        {
+             background : #D1D6D0;
+             width : 100%;
+             height : 100px; 
+             padding : 20px;
+             border : 5px dotted gray;
+             /* background-image: url(../img/bg2.jpg); */
+             background-size: 300px 500px;
+             /* background-clip : border-box; */
+             background-position: left top;
+             background-origin: border-box;
+             border-radius: 10px;
+        }
+        #gradbox{
+            /* background: linear-gradient(to bottom, red , orange 60%, yellow 90%); */
+            /* background: radial-gradient(white,gray 30%,black,gray 30%,white); */
+            background: repeating-linear-gradient(#ccff00,#ccff00 20px,#a5f2f3 20px,#a5f2f3 40px);
+            width : 100%;
+            height : 100px; 
+            padding : 20px;
+        }
+        #block img {
+            display:block;
+            margin:10px;
+        }
+        #menubox ul li {
+            display: inline;
+            margin: 40px;
+        }
+        #shadowbox {
+            margin : 100px;
+            width : 500px;
+            height : 100px;
+            border : 2px solid red;
+            box-shadow: 5px 5px 5px 1px orange;
+        }
+        </style>  
+    </head>    
+    <body>
+       <div id = "menubox">
+            <ul>
+                <li><a href ="../index.html">HOME</a></li>
+                <li>PROFILE</li>
+                <li>EXAMPLE</li>
+                <li>FORM</li>
+            </ul>
+       </div>
+       <div id = "gradbox">
+       </div>
+       <!-- <h1 class = "color1"> 칼라 넣기 </h1>   -->
+       <!-- <h1> MENU </h1> -->
+       <div id ="block">
+            <img src ="../img/bx1.jpg">
+            <img src ="../img/bx2.jpg">
+            <img src ="../img/bx4.jpg">
+       </div>     
+       <div id = "shadowbox">
+
+
+       </div>
+       
+        
+    </body>
+</html>
